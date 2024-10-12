@@ -10,8 +10,8 @@ def canUnlockAll(boxes):
 
     Args:
         boxes (list of list of int): A list of boxes,
-                                     where each box contains a list of keys
-                                     that can unlock other boxes.
+        where each box contains a list of keys
+        that can unlock other boxes.
 
     Returns:
         bool: True if all boxes can be unlocked, False otherwise.
