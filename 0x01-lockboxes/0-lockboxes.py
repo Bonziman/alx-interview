@@ -9,8 +9,8 @@ def canUnlockAll(boxes):
     Determine if all boxes can be unlocked starting from box 0.
 
     Args:
-        boxes (list of list of int): A list of boxes, 
-                                     where each box contains a list of keys 
+        boxes (list of list of int): A list of boxes,
+                                     where each box contains a list of keys
                                      that can unlock other boxes.
 
     Returns:
