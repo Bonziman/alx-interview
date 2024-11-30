@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+    model with a function to calculate minimum number of coins needed
+    to make the a pregiven total
+"""
 def makeChange(coins, total):
     """
     Determine the minimum number of coins needed to meet a given amount `total`.
@@ -24,5 +28,6 @@ def makeChange(coins, total):
         for i in range(coin, total + 1):
             dp[i] = min(dp[i], dp[i - coin] + 1)
 
-    # If dp[total] is still 'inf', it means the total cannot be met by any combination of coins
+    # If dp[total] is still 'inf',
+    # it means the total cannot be met by any combination of coins
     return dp[total] if dp[total] != float('inf') else -1
